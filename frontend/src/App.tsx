@@ -1,6 +1,7 @@
 import Home from "./components/Home"
 import About from "./components/About"
 import Experience from "./components/Experience"
+import Education from "./components/Education"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Home />
       <About />
       <Experience />
+      <Education />
     </>
   )
 }

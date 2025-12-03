@@ -1,7 +1,7 @@
 const Experience = () => {
     return (
         <div className="flex flex-col justify-center items-center text-center text-[#EBEBEB]">
-            <h2 className="text-2xl mb-2">Experiência Profissional</h2>
+            <h2 className="text-2xl mb-5">Experiência Profissional</h2>
 
             <div className="flex flex-col mx-5">
                 <div className="flex items-start gap-4">
