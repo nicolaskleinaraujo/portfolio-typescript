@@ -92,6 +92,7 @@ const Projects = () => {
             </div>
 
             <div className="border-1 border-[#2E2E2E] rounded-xl mx-3 py-4 hover:border-[#7B9EFF]/50 transition-all duration-300">
+                {/* FIXME fix the image proportion on mobile resolution */}
                 <img src="./projects-photos/todo_list_img.jpg" alt="Project Image" className="w-full h-42" />
 
                 <div className="my-10 ml-3">
