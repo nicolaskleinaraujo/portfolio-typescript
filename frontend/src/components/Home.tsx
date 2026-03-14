@@ -12,23 +12,25 @@ const Home = () => {
     }
 
     return (
-        <div className="flex justify-center flex-col items-center text-center pt-3 text-[#EBEBEB]">
-            <h3 className="text-[#8C8C8C] text-xl">Olá, eu sou</h3  >
-            <h1 className="text-4xl my-3 md:text-6xl">Nicolas Klein</h1>
-            <h2 className="text-[#7B9EFF] md:text-2xl mb-2">Desenvolvedor Full Stack</h2>
+        <div className="flex justify-center flex-col lg:flex-row lg:justify-between items-center text-center pt-3 text-[#EBEBEB]">
+            <div className="flex flex-col items-center lg:text-left lg:items-start lg:ml-20">
+                <h3 className="text-[#8C8C8C] text-xl">Olá, eu sou</h3>
+                <h1 className="text-4xl my-3 md:text-6xl">Nicolas Klein</h1>
+                <h2 className="text-[#7B9EFF] md:text-2xl mb-2">Desenvolvedor Full Stack</h2>
 
-            <p className="mx-3 max-w-xl">Juntando tecnologia com proposito para a solução de problemas de forma moderna e eficiente. Especializado em JavaScript e TypeScript.</p>
+                <Duolingo />
 
-            <div className="flex m-3 gap-8">
-                <a href="https://github.com/nicolaskleinaraujo/" target="_blank" className="hover:bg-[#262626] p-2 rounded-md"><LuGithub /></a>
-                <a href="https://www.linkedin.com/in/nicolaskleinaraujo/" target="_blank" className="hover:bg-[#262626] p-2 rounded-md"><LuLinkedin /></a>
-                <button onClick={() => copyEmail()} className="hover:bg-[#262626] p-2 rounded-md cursor-pointer"><LuMail /></button>
-                <a href="https://wa.me/5544997666224" target="_blank" className="hover:bg-[#262626] p-2 rounded-md"><FaWhatsapp /></a>
+                <p className="mx-3 max-w-xl lg:mx-0">Juntando tecnologia com proposito para a solução de problemas de forma moderna e eficiente. Especializado em JavaScript e TypeScript.</p>
+
+                <div className="flex m-3 gap-8">
+                    <a href="https://github.com/nicolaskleinaraujo/" target="_blank" className="hover:bg-[#262626] p-2 rounded-md"><LuGithub /></a>
+                    <a href="https://www.linkedin.com/in/nicolaskleinaraujo/" target="_blank" className="hover:bg-[#262626] p-2 rounded-md"><LuLinkedin /></a>
+                    <button onClick={() => copyEmail()} className="hover:bg-[#262626] p-2 rounded-md cursor-pointer"><LuMail /></button>
+                    <a href="https://wa.me/5544997666224" target="_blank" className="hover:bg-[#262626] p-2 rounded-md"><FaWhatsapp /></a>
+                </div>
             </div>
 
-            <Duolingo />
-
-            <img src="./my_photo.jpg" alt="My photo" className="w-57 h-57 border-[#7B9EFF]/40 border-2 rounded-md opacity-88" />
+            <img src="./my_photo.jpg" alt="My photo" className="w-57 h-57 border-[#7B9EFF]/40 border-2 rounded-md opacity-88 lg:w-70 lg:h-70 lg:mr-20" />
         </div>
     )
 }

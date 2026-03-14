@@ -25,9 +25,9 @@ const Projects = () => {
                 </div>
                 <div className="border-1 border-[#2E2E2E] rounded-xl mx-3 py-4 hover:border-[#7B9EFF]/50 transition-all duration-300">
                     <img src="./projects-photos/clothing_img.jpg" alt="Project Image" className="w-full h-42 object-cover" />
-                    <div className="my-10 ml-3 min-h-79">
+                    <div className="my-10 ml-3">
                         <h2 className="text-left text-xl">Loja de Roupas FullStack</h2>
-                        <p className="text-left text-[#8C8C8C] my-3 pr-1 min-h-59">Este projeto é uma loja de roupas que permite aos usuários comprar e pagar por suas compras. Para usar os recursos de administração, use a seguinte conta: email: 'admin@gmail.com', senha: '12345'. Para o frontend utilizei React e o backend foi feito em Node.js. O pagamento é feito através do MercadoPago.</p>
+                        <p className="text-left text-[#8C8C8C] my-3 pr-1">Este projeto é uma loja de roupas que permite aos usuários comprar e pagar por suas compras. Para usar os recursos de administração, use a seguinte conta: email: 'admin@gmail.com', senha: '12345'. Para o frontend utilizei React e o backend foi feito em Node.js. O pagamento é feito através do MercadoPago.</p>
                         <div className="flex text-left text-xs space-x-3">
                             <span className="bg-[#7B9EFF]/10 text-[#7B9EFF] px-2 py-1 rounded-md">React</span>
                             <span className="bg-[#7B9EFF]/10 text-[#7B9EFF] px-2 py-1 rounded-md">Node.JS</span>
