@@ -1,22 +1,20 @@
 const Education = () => {
     return (
-        <div className="flex flex-col justify-center items-center text-center text-[#EBEBEB] mt-15">
-            <h2 className="text-2xl mb-5">Formação Educacional</h2>
+        <div className="flex flex-col text-[#EBEBEB] my-25">
+            <h2 className="text-2xl mb-5 font-bold text-left indent-5">Formação Educacional</h2>
 
             <div className="flex flex-col mx-5">
                 <div className="flex items-start gap-4 mb-5">
-                    <div className="flex flex-col items-center">
-                        <div className="h-6 w-6 rounded-full bg-[#7B9EFF]"></div>
-                        <div className="w-[2px] h-45 bg-[#2E2E2E]/40"></div>
-                    </div>
-                    <div className="flex flex-col items-start">
+                    <div className="flex flex-col items-start relative pl-5 border-l-2 border-[#2E2E2E]/40">
+                        <div className="h-4 w-4 rounded-full bg-[#7B9EFF] absolute left-0 top-0 -translate-x-1/2"></div>
+
                         <h2 className="text-left text-2xl">Análise e Desenvolvimento de Sistemas</h2>
 
                         <h3 className="text-[#7B9EFF] text-sm mb-3">UniCesumar</h3>
 
-                        <p className="text-[#8C8C8C] text-sm mb-2">2024 - 2026</p>
+                        <p className="text-[#8C8C8C] text-sm mb-2 sm:absolute sm:right-0 sm:top-0">2024 - 2026</p>
 
-                        <p className="text-[#8C8C8C] text-left">Tecnólogo em ADS com previsão de conclusão no meio 2026</p>
+                        <p className="text-[#8C8C8C] text-left">Tecnólogo em ADS com previsão de conclusão no meio de 2026. Durante o curso, aprendo linguagens como C e Python, além de explorar os fundamentos de tecnologia, estrutura de dados e outros tópicos importantes da área.</p>
                     </div>
                 </div>
             </div>

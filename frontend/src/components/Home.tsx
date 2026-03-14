@@ -14,10 +14,10 @@ const Home = () => {
     return (
         <div className="flex justify-center flex-col items-center text-center pt-3 text-[#EBEBEB]">
             <h3 className="text-[#8C8C8C] text-xl">Olá, eu sou</h3  >
-            <h1 className="text-4xl my-3">Nicolas Klein</h1>
-            <h2 className="text-[#7B9EFF]">Desenvolvedor Full Stack</h2>
+            <h1 className="text-4xl my-3 md:text-6xl">Nicolas Klein</h1>
+            <h2 className="text-[#7B9EFF] md:text-2xl mb-2">Desenvolvedor Full Stack</h2>
 
-            <p className="mx-3">Juntando tecnologia com proposito para a solução de problemas de forma moderna e eficiente. Especializado em JavaScript e TypeScript.</p>
+            <p className="mx-3 max-w-xl">Juntando tecnologia com proposito para a solução de problemas de forma moderna e eficiente. Especializado em JavaScript e TypeScript.</p>
 
             <div className="flex m-3 gap-8">
                 <a href="https://github.com/nicolaskleinaraujo/" target="_blank" className="hover:bg-[#262626] p-2 rounded-md"><LuGithub /></a>
