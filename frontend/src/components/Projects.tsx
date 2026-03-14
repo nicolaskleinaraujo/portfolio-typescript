@@ -2,10 +2,10 @@ import { FiGithub, FiExternalLink, FiDownload } from "react-icons/fi";
 
 const Projects = () => {
     return (
-        <div className="flex flex-col justify-center items-center text-center text-[#EBEBEB] mt-8">
+        <div className="flex flex-col justify-center items-center text-center text-[#EBEBEB] my-8">
             <h2 className="text-2xl mb-5">Projetos</h2>
 
-            <div className="grid md:grid-cols-2">
+            <div className="grid md:grid-cols-2 gap-5">
                 <div className="border-1 border-[#2E2E2E] rounded-xl mx-3 py-4 hover:border-[#7B9EFF]/50 transition-all duration-300">
                     <img src="./projects-photos/automailer_img.jpg" alt="Project Image" className="w-full h-42" />
                     <div className="my-10 ml-3">
@@ -74,7 +74,7 @@ const Projects = () => {
                 </div>
                 <div className="border-1 border-[#2E2E2E] rounded-xl mx-3 py-4 hover:border-[#7B9EFF]/50 transition-all duration-300">
                     {/* FIXME fix the image proportion on mobile resolution */}
-                    <img src="./projects-photos/todo_list_img.jpg" alt="Project Image" className="w-full h-42" />
+                    <img src="./projects-photos/todo_list_img.jpg" alt="Project Image" className="w-full object-cover" />
                     <div className="my-10 ml-3">
                         <h2 className="text-left text-xl">To-do List com Python</h2>
                         <p className="text-left text-[#8C8C8C] my-3 pr-1">Lista 'To-do' feita utilizando Python. A interface grafica foi feita utilizando a biblioteca 'PyQT' e o salvamento dos dados foi feito utilizando o 'Pandas' em um arquivo 'csv'. A lista 'To-do' facilita a programação de tarefas cotidianas.</p>

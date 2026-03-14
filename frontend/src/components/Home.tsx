@@ -17,7 +17,7 @@ const Home = () => {
             <h1 className="text-4xl my-3">Nicolas Klein</h1>
             <h2 className="text-[#7B9EFF]">Desenvolvedor Full Stack</h2>
 
-            <p>Juntando tecnologia com proposito para a solução de problemas de forma moderna e eficiente. Especializado em JavaScript e TypeScript.</p>
+            <p className="mx-3">Juntando tecnologia com proposito para a solução de problemas de forma moderna e eficiente. Especializado em JavaScript e TypeScript.</p>
 
             <div className="flex m-3 gap-8">
                 <a href="https://github.com/nicolaskleinaraujo/" target="_blank" className="hover:bg-[#262626] p-2 rounded-md"><LuGithub /></a>
