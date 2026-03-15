@@ -21,7 +21,7 @@ const Home = ({ ref }: HomeProps) => {
             ref={ref}
             className="flex justify-center flex-col lg:flex-row lg:justify-between items-center text-center pt-30 text-[#EBEBEB]"
         >
-            <div className="flex flex-col items-center lg:text-left lg:items-start lg:ml-20">
+            <div className="flex flex-col items-center lg:text-left lg:items-start lg:ml-35">
                 <h3 className="text-[#8C8C8C] text-xl">Olá, eu sou</h3>
                 <h1 className="text-4xl my-3 md:text-6xl">Nicolas Klein</h1>
                 <h2 className="text-[#7B9EFF] md:text-2xl mb-2">Desenvolvedor Full Stack</h2>
@@ -38,7 +38,7 @@ const Home = ({ ref }: HomeProps) => {
                 </div>
             </div>
 
-            <img src="./my_photo.jpg" alt="My photo" className="w-57 h-57 border-[#7B9EFF]/40 border-2 rounded-md opacity-88 lg:w-70 lg:h-70 lg:mr-20" />
+            <img src="./my_photo.jpg" alt="My photo" className="w-57 h-57 border-[#7B9EFF]/40 border-2 rounded-md opacity-88 lg:w-70 lg:h-70 lg:mr-35" />
         </div>
     )
 }
