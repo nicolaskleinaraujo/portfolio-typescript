@@ -1,6 +1,13 @@
-const Experience = () => {
+// Modules
+import type { RefObject } from "react"
+
+interface ExperienceProps {
+    ref: RefObject<null>
+}
+
+const Experience = ({ ref }: ExperienceProps) => {
     return (
-        <div className="flex flex-col text-[#EBEBEB]">
+        <div ref={ref} className="flex flex-col text-[#EBEBEB]">
             <h2 className="text-2xl mb-5 font-bold text-left indent-5">Experiência Profissional</h2>
 
             <div className="flex flex-col mx-5">

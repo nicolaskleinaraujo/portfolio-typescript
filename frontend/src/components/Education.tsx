@@ -1,6 +1,13 @@
-const Education = () => {
+// Modules
+import type { RefObject } from "react"
+
+interface EducationProps {
+    ref: RefObject<null>
+}
+
+const Education = ({ ref }: EducationProps) => {
     return (
-        <div className="flex flex-col text-[#EBEBEB] my-40">
+        <div ref={ref} className="flex flex-col text-[#EBEBEB] my-40">
             <h2 className="text-2xl mb-5 font-bold text-left indent-5">Formação Educacional</h2>
 
             <div className="flex flex-col mx-5">

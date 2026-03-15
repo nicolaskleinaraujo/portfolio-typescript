@@ -1,8 +1,14 @@
-import { FiGithub, FiExternalLink, FiDownload } from "react-icons/fi";
+// Modules
+import { FiGithub, FiExternalLink, FiDownload } from "react-icons/fi"
+import type { RefObject } from "react"
 
-const Projects = () => {
+interface ProjectsProps {
+    ref: RefObject<null>
+}
+
+const Projects = ({ ref }: ProjectsProps) => {
     return (
-        <div className="flex flex-col justify-center items-center text-center text-[#EBEBEB] my-8">
+        <div ref={ref} className="flex flex-col justify-center items-center text-center text-[#EBEBEB] my-8">
             <h2 className="text-2xl mb-5 font-bold">Projetos</h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">

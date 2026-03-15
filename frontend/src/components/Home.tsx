@@ -1,8 +1,13 @@
 import { LuGithub, LuLinkedin, LuMail } from "react-icons/lu"
 import { FaWhatsapp } from "react-icons/fa"
 import Duolingo from "./Duolingo"
+import type { RefObject } from "react"
 
-const Home = () => {
+interface HomeProps {
+    ref: RefObject<null>
+}
+
+const Home = ({ ref }: HomeProps) => {
     const copyEmail = async() => {
         try {
             await navigator.clipboard.writeText("contatonkfa@gmail.com")
@@ -12,7 +17,10 @@ const Home = () => {
     }
 
     return (
-        <div className="flex justify-center flex-col lg:flex-row lg:justify-between items-center text-center pt-3 text-[#EBEBEB]">
+        <div 
+            ref={ref}
+            className="flex justify-center flex-col lg:flex-row lg:justify-between items-center text-center pt-30 text-[#EBEBEB]"
+        >
             <div className="flex flex-col items-center lg:text-left lg:items-start lg:ml-20">
                 <h3 className="text-[#8C8C8C] text-xl">Olá, eu sou</h3>
                 <h1 className="text-4xl my-3 md:text-6xl">Nicolas Klein</h1>
