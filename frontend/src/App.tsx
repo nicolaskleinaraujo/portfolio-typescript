@@ -31,6 +31,8 @@ function App() {
       <Experience ref={experienceRef} />
       <Education ref={educationRef} />
       <Projects ref={projectsRef} />
+
+      {/* TODO create footer */}
     </>
   )
 }

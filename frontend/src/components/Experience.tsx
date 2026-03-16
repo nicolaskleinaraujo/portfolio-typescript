@@ -7,7 +7,7 @@ interface ExperienceProps {
 
 const Experience = ({ ref }: ExperienceProps) => {
     return (
-        <div ref={ref} className="flex flex-col text-[#EBEBEB]">
+        <div ref={ref} className="flex flex-col text-[#EBEBEB] mx-auto max-w-4xl">
             <h2 className="text-2xl mb-5 font-bold text-left indent-5">Experiência Profissional</h2>
 
             <div className="flex flex-col mx-5 gap-10">
