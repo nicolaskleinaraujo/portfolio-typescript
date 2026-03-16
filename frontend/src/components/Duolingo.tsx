@@ -3,10 +3,12 @@ import { SiDuolingo } from "react-icons/si"
 import { useEffect, useState } from "react"
 
 const Duolingo = () => {
+    const [cashedStreak, setCashedStreak] = useState<number>()
     const [streak, setStreak] = useState<number>()
 
     const fetchDuolingo = async() => {
         try {
+            await new Promise(resolve => setTimeout(resolve, 3000))
             const res = await axios.get(import.meta.env.VITE_DUOLINGO_URL as string)
 
             setStreak(res.data.users[0].streak)
@@ -16,6 +18,7 @@ const Duolingo = () => {
     }
 
     useEffect(() => {
+        setCashedStreak(Math.floor((new Date().getTime() - new Date("2024-10-28").getTime()) / (1000 * 60 * 60 * 24)))
         fetchDuolingo()
     }, [])
 
@@ -24,7 +27,7 @@ const Duolingo = () => {
             <SiDuolingo className="h-6 w-6 text-emerald-500" />
             <div className="text-center">
                 {/* TODO create skeleton loading */}
-                <p className="text-2xl font-bold text-white">{streak}</p>
+                <p className="text-2xl font-bold text-white">{!streak ? cashedStreak : streak}</p>
                 <p className="text-xs text-muted-foreground text-[#8C8C8C]">Duolingo Score</p>
             </div>
         </div>
