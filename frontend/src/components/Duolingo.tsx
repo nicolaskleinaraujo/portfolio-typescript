@@ -8,7 +8,6 @@ const Duolingo = () => {
 
     const fetchDuolingo = async() => {
         try {
-            await new Promise(resolve => setTimeout(resolve, 3000))
             const res = await axios.get(import.meta.env.VITE_DUOLINGO_URL as string)
 
             setStreak(res.data.users[0].streak)
