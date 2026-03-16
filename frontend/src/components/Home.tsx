@@ -11,6 +11,7 @@ const Home = ({ ref }: HomeProps) => {
     const copyEmail = async() => {
         try {
             await navigator.clipboard.writeText("contatonkfa@gmail.com")
+            // TODO add toast notification
         } catch (error) {
             console.log(error)
         }

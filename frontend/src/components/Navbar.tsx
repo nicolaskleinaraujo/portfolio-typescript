@@ -10,8 +10,11 @@ interface NavbarProps {
 
 const Navbar = ({ homeRef, aboutRef, experienceRef, educationRef, projectsRef }: NavbarProps) => {
     const scrollToSection = (ref: RefObject<null | HTMLDivElement>) => {
-        if (ref.current !== null) {
-            ref.current.scrollIntoView({ behavior: 'smooth' })
+        if (ref.current) {
+            window.scrollTo({
+                top: ref.current.offsetTop - 96,
+                behavior: "smooth"
+            })
         }
     }
     
