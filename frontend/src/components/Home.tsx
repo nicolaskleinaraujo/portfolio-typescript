@@ -2,6 +2,7 @@ import { LuGithub, LuLinkedin, LuMail } from "react-icons/lu"
 import { FaWhatsapp } from "react-icons/fa"
 import Duolingo from "./Duolingo"
 import type { RefObject } from "react"
+import { toast } from "react-toastify"
 
 interface HomeProps {
     ref: RefObject<null>
@@ -11,7 +12,7 @@ const Home = ({ ref }: HomeProps) => {
     const copyEmail = async() => {
         try {
             await navigator.clipboard.writeText("contatonkfa@gmail.com")
-            // TODO add toast notification
+            toast.success("Email copiado com sucesso")
         } catch (error) {
             console.log(error)
         }
@@ -29,7 +30,7 @@ const Home = ({ ref }: HomeProps) => {
 
                 <Duolingo />
 
-                <p className="mx-3 max-w-xl lg:mx-0">Juntando tecnologia com proposito para a solução de problemas de forma moderna e eficiente. Especializado em JavaScript e TypeScript.</p>
+                <p className="mx-3 max-w-xl lg:mx-0">Juntando tecnologia com propósito para a solução de problemas de forma moderna e eficiente. Especializado em JavaScript e TypeScript.</p>
 
                 <div className="flex m-3 gap-8">
                     <a href="https://github.com/nicolaskleinaraujo/" target="_blank" className="hover:bg-[#262626] p-2 rounded-md"><LuGithub /></a>

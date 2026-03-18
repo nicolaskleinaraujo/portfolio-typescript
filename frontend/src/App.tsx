@@ -1,5 +1,7 @@
 // Modules
+import 'react-toastify/dist/ReactToastify.css'
 import { useRef } from "react"
+import { Flip, ToastContainer } from 'react-toastify'
 
 // Components
 import Navbar from "./components/Navbar"
@@ -33,6 +35,15 @@ function App() {
       <Projects ref={projectsRef} />
 
       {/* TODO create footer */}
+
+      <ToastContainer 
+        position="bottom-center" 
+        autoClose={1000} 
+        pauseOnHover={false} 
+        closeOnClick 
+        transition={Flip} 
+        theme="dark" 
+      />
     </>
   )
 }
