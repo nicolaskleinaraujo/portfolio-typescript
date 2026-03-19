@@ -1,5 +1,5 @@
 // Modules
-import { FiGithub, FiExternalLink, FiDownload } from "react-icons/fi"
+import { FiGithub, FiExternalLink } from "react-icons/fi"
 import type { RefObject } from "react"
 
 interface ProjectsProps {
@@ -12,6 +12,21 @@ const Projects = ({ ref }: ProjectsProps) => {
             <h2 className="text-2xl mb-5 font-bold">Projetos</h2>
 
             <div className="grid md:grid-cols-2 gap-5">
+                <div className="border-1 border-[#2E2E2E] rounded-xl mx-3 py-4 hover:border-[#7B9EFF]/50 transition-all duration-300 overflow-hidden group">
+                    <img src="./projects-photos/music_player_img.jpg" alt="Project Image" className="w-full h-42 object-cover group-hover:scale-105 duration-200" />
+                    <div className="my-10 ml-3">
+                        <h2 className="text-left text-xl">Player de Música MVP</h2>
+                        <p className="text-left text-[#8C8C8C] my-3 pr-1">Meu primeiro MVP de player de música permite aos usuários ouvir qualquer música, criar playlists personalizadas e compartilhar momentos com amigos em tempo real através das "Salas". Cada sala sincroniza a reprodução para todos os participantes, criando uma experiência colaborativa de escuta. O frontend foi feito em React + TypeScript e o backend utiliza Node.js com Express e WebSocket para sincronização em tempo real.</p>
+                        <div className="flex text-left text-xs space-x-3">
+                            <span className="bg-[#7B9EFF]/10 text-[#7B9EFF] px-2 py-1 rounded-md">TypeScript</span>
+                            <span className="bg-[#7B9EFF]/10 text-[#7B9EFF] px-2 py-1 rounded-md">Stripe</span>
+                            <span className="bg-[#7B9EFF]/10 text-[#7B9EFF] px-2 py-1 rounded-md">WebSocket</span>
+                        </div>
+                    </div>
+                    <nav className="flex justify-center space-x-4 mb-4">
+                        <a href="https://music-player.nkportfolio.tech" target="_blank" className="inline-flex items-center justify-center rounded-md gap-2 px-2 py-2 font-medium text-sm w-32 text-[#0D0D0D] bg-[#7B9EFF] transition-all hover:bg-[#7B9EFF]/85"><FiExternalLink /> Demo ao Vivo</a>
+                    </nav>
+                </div>
                 <div className="border-1 border-[#2E2E2E] rounded-xl mx-3 py-4 hover:border-[#7B9EFF]/50 transition-all duration-300 overflow-hidden group">
                     <img src="./projects-photos/automailer_img.jpg" alt="Project Image" className="w-full h-42 object-cover group-hover:scale-105 duration-200" />
                     <div className="my-10 ml-3">
@@ -76,22 +91,6 @@ const Projects = ({ ref }: ProjectsProps) => {
                     <nav className="flex justify-center space-x-4 mb-4">
                         <a href="https://github.com/nicolaskleinaraujo/shop-project" target="_blank" className="inline-flex items-center justify-center  border-1 border-[#2E2E2E] rounded-md gap-2 px-2 py-2 font-medium text-sm w-32 hover:bg-[#262626] transition-all"><FiGithub /> Ver Código</a>
                         <a href="https://shop-project.nkportfolio.tech" target="_blank" className="inline-flex items-center justify-center rounded-md gap-2 px-2 py-2 font-medium text-sm w-32 text-[#0D0D0D] bg-[#7B9EFF] transition-all hover:bg-[#7B9EFF]/85"><FiExternalLink /> Demo ao Vivo</a>
-                    </nav>
-                </div>
-                <div className="border-1 border-[#2E2E2E] rounded-xl mx-3 py-4 hover:border-[#7B9EFF]/50 transition-all duration-300 overflow-hidden group">
-                    <img src="./projects-photos/todo_list_img.jpg" alt="Project Image" className="w-full object-cover group-hover:scale-105 duration-200" />
-                    <div className="my-10 ml-3">
-                        <h2 className="text-left text-xl">To-do List com Python</h2>
-                        <p className="text-left text-[#8C8C8C] my-3 pr-1">Lista 'To-do' feita utilizando Python. A interface grafica foi feita utilizando a biblioteca 'PyQT' e o salvamento dos dados foi feito utilizando o 'Pandas' em um arquivo 'csv'. A lista 'To-do' facilita a programação de tarefas cotidianas.</p>
-                        <div className="flex text-left text-xs space-x-3">
-                            <span className="bg-[#7B9EFF]/10 text-[#7B9EFF] px-2 py-1 rounded-md">Python</span>
-                            <span className="bg-[#7B9EFF]/10 text-[#7B9EFF] px-2 py-1 rounded-md">Pandas</span>
-                            <span className="bg-[#7B9EFF]/10 text-[#7B9EFF] px-2 py-1 rounded-md">PyQT</span>
-                        </div>
-                    </div>
-                    <nav className="flex justify-center space-x-4 mb-4">
-                        <a href="https://github.com/nicolaskleinaraujo/todo-list" target="_blank" className="inline-flex items-center justify-center  border-1 border-[#2E2E2E] rounded-md gap-2 px-2 py-2 font-medium text-sm w-32 hover:bg-[#262626] transition-all"><FiGithub /> Ver Código</a>
-                        <a href="./todolist_app.zip" className="inline-flex items-center justify-center rounded-md gap-2 px-2 py-2 font-medium text-sm w-32 text-[#0D0D0D] bg-[#7B9EFF] transition-all hover:bg-[#7B9EFF]/85"><FiDownload /> Download</a>
                     </nav>
                 </div>
             </div>

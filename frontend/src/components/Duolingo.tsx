@@ -27,7 +27,7 @@ const Duolingo = () => {
             <div className="text-center">
                 {/* TODO create skeleton loading */}
                 <p className="text-2xl font-bold text-white">{!streak ? cashedStreak : streak}</p>
-                <p className="text-xs text-muted-foreground text-[#8C8C8C]">Duolingo Score</p>
+                <p className="text-xs text-muted-foreground text-[#8C8C8C]">Duolingo Streak</p>
             </div>
         </div>
     )
